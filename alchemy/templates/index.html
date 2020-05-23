@@ -5,17 +5,17 @@
   {% if DESCRIPTION %}
     <meta name="description" content="{{ DESCRIPTION|striptags }}">
   {% endif %}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@myecologies" />
+  <meta name="twitter:title" content="{{ SITENAME }}" />
+  <meta name="twitter:description" content="{{ SITESUBTITLE }}" />
+  <meta name="twitter:image" content="https://myecologies.com/images/julia_animation_318.jpeg" />
 {% endblock %}
 
 {% block title %}
   {{ SITENAME }} | {{ SITESUBTITLE }}
 {% endblock %}
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@myecologies" />
-<meta name="twitter:title" content="{{ SITENAME }}" />
-<meta name="twitter:description" content="{{ SITESUBTITLE }}" />
-<meta name="twitter:image" content="https://myecologies.com/images/julia_animation_318.jpeg" />
 
 {% block page_header %}
   Articles

@@ -3,6 +3,13 @@
 {% block head %}
   {{ super() }}
   <meta name="description" content="{{ article.summary|striptags }}">
+  {% if article.cover %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@myecologies" />
+    <meta name="twitter:title" content="{{ article.title }}" />
+    <meta name="twitter:description" content="{{ article.summary }}" />
+    <meta name="twitter:image" content="https://myecologies.com/{{ article.cover }}" />
+  {% endif %}
 {% endblock %}
 
 {% block title %}
