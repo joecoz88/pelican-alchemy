@@ -5,10 +5,10 @@
   <meta name="description" content="{{ article.summary|striptags }}">
   {% if article.cover %}
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@myecologies" />
+    <meta name="twitter:site" content="@{{ TWITTER }}" />
     <meta name="twitter:title" content="{{ article.title }}" />
     <meta name="twitter:description" content="{{ article.summary }}" />
-    <meta name="twitter:image" content="https://myecologies.com/{{ article.cover }}" />
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ article.cover }}" />
   {% endif %}
 {% endblock %}
 
